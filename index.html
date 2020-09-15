@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <style>
+body{
+    background-color:#2A9D8F;
+    background-image: linear-gradient(65deg, #329186 0%, #469289 100%);
+}
+#welcome-section{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+header{
+    font-size:30px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#264653; 
+    background-image: linear-gradient(60deg, #264653 0%, #3c5f6d 100%);
+    color:#E76F51;
+    text-align: center;
+}
+h1{
+    font-size:48px;
+    text-align:center;
+}
+h2{
+    font-size:32px;
+    color:#E76F51;
+    text-align: center;
+    background-color:#264653;
+    padding:20px;
+    margin:10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+p{
+    font-size:30px;
+    color:#E76F51;
+    text-align: center;
+    background-color:#264653;
+    background-image: linear-gradient(60deg, #264653 0%, #3c5f6d 100%);
+    padding:20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:#E76F51;
+    font-size:28px;
+    background-color:#264653;
+    background-image: linear-gradient(60deg, #41616e 0%, #182f38 100%);
+    border:solid #E9C46A;
+    text-decoration:none;
+    padding:3px;
+    margin:10px;
+}
+div.project-tile{
+display:flex;
+text-align:center;
+flex-direction:column;
+}
+iframe{
+    height:500px;
+    width:100%;
+    border:none;
+    margin:auto;
+}
+div.contact-tile{
+    text-align:center;
+}
+@media only screen and (max-width:800px){
+    a {
+        font-size:18px;
+    }
+}
+nav{
+    display:flex;
+    position:fixed;
+    background-color:#264653; 
+    background-image: linear-gradient(60deg, #264653 0%, #3c5f6d 100%);
+    width:100%;
+    top:0;
+    }
+        </style>
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <header>
+        <section id="welcome-section"><h1>Welcome To My Portfolio!</h1>
+        My name is Santiago Boscan and my goal is to become a successful software developer!</section>
+        </header>
+        <section id="projects">
+            <div class="project-tile">
+                <h2>In this section you can see some of my projects as a web developer.</h2>
+                <iframe src="https://santiagoboscan07.github.io/Hirohiko-Araki-Tribute-Page/" title="Tribute Page" name="iframe_a"></iframe><br>
+                <p>Click the buttons below to select the page.</p>
+                <a href="https://santiagoboscan07.github.io/Hirohiko-Araki-Tribute-Page/" target="iframe_a">Tribute Page</a>
+                <a href="https://santiagoboscan07.github.io/survey_page/" target="iframe_a">Survey Page</a>
+                <a href="https://santiagoboscan07.github.io/product_landing/" target="iframe_a">Product Landing Page</a>
+                <a href="https://santiagoboscan07.github.io/documentation/" target="iframe_a">Technical Documentation</a>
+            </div>
+        </section>
+        <section id="contact">
+            <p>Contact Information</p>
+            <div class="contact-tile">
+                <a id="profile-link" href="https://github.com/SantiagoBoscan07" target="_blank">Github Profile</a>
+                <a id="profile-link" href="https://www.freecodecamp.org/fcc7dec10a6-47b0-4b01-aa2b-d4c002916890" target="_blank">FFC Profile</a>
+            </div>
+        </section>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
